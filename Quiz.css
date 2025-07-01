@@ -23,6 +23,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.quiz-container hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
 h1 {
   text-align: left;
   font-size: 1.6rem;
@@ -61,8 +68,37 @@ ul {
   background: #222;
   color: #fff;
 }
+.last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#count {
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+}
 
 #next-btn {
+  padding: 0.7rem 1.2rem;
+  background-color: rgb(255, 186, 58);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#next-btn:hover {
+  background-color: orange;
+}
+
+#reset {
   padding: 0.7rem 1.2rem;
   width: 100%;
   background-color: #007bff;
@@ -73,28 +109,13 @@ ul {
   margin-top: 1rem;
   transition: background 0.3s;
   text-align: center;
-}
-
-#next-btn:hover {
-  background-color: #0056b3;
+  display: none;
 }
 
 #result {
-  display: none;
+  display: block;
   margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: bold;
   color: green;
 }
-
-.correct {
-  background-color: #4caf50;
-  color: white;
-}
-
-.wrong {
-  background-color: #f44336;
-  color: white;
-}
-
-
-
