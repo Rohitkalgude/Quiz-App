@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  background: #001e4d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,23 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  width: 400px;
+  width: 90%;
+  max-width: 420px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  margin-bottom: 1.5rem;
+h1 {
+  text-align: left;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -35,21 +45,24 @@ ul {
 .option-btn {
   margin: 0.5rem 0;
   padding: 0.7rem 1.2rem;
+  background: #fff;
+  color: #222;
   width: 100%;
-  border: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
+  border: 1px solid #222;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.2 ease;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .option-btn:hover {
-  background-color: #555;
+  background: #222;
+  color: #fff;
 }
 
-#next-btn,
-#reset {
+#next-btn {
   padding: 0.7rem 1.2rem;
   width: 100%;
   background-color: #007bff;
@@ -58,10 +71,11 @@ ul {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1rem;
+  transition: background 0.3s;
+  text-align: center;
 }
 
-#next-btn,
-#reset:hover {
+#next-btn:hover {
   background-color: #0056b3;
 }
 
@@ -71,3 +85,16 @@ ul {
   font-size: 1.2rem;
   color: green;
 }
+
+.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
