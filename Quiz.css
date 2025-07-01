@@ -41,9 +41,33 @@ ul {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.2 ease;
 }
 
-#result,
+.option-btn:hover {
+  background-color: #555;
+}
+
+#next-btn,
 #reset {
+  padding: 0.7rem 1.2rem;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#next-btn,
+#reset:hover {
+  background-color: #0056b3;
+}
+
+#result {
   display: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: green;
 }
